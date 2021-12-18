@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9EAED"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="162dp"
+                android:layout_height="52dp"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/dreamer"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="MENU"
+                android:textColor="#3949AB"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/btnSatu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnSatu"
+                android:layout_width="284dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn_pink"
+                android:onClick="btnSatuOnClick"
+                android:text="Pindah Activity"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <Button
+                android:id="@+id/btnDua"
+                android:layout_width="284dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/btn_green"
+                android:onClick="btnDuaOnClick"
+                android:text="Pindah Activity dengan Data"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSatu" />
+
+            <Button
+                android:id="@+id/btnTiga"
+                android:layout_width="284dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/btn_grape"
+                android:onClick="btnTigaOnClick"
+                android:text="Pindah Activity dengan Object "
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnDua" />
+
+            <Button
+                android:id="@+id/btnEmpat"
+                android:layout_width="284dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/btn_orange"
+                android:onClick="btnEmpatOnClick"
+                android:text="Dial Number"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnTiga" />
+
+            <Button
+                android:id="@+id/btnLima"
+                android:layout_width="284dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/btn_yellow"
+                android:onClick="btnLimaOnClick"
+                android:text="Pindah Activity Untuk Result"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.513"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEmpat" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/kasuhan"
+                android:gravity="center"
+                android:text="Selamat Mencoba"
+                android:textColor="#E6DEE1"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLima" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
